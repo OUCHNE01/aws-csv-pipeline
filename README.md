@@ -21,9 +21,6 @@ Le pipeline s’appuie sur les services suivants :
    - **Glue Crawler** : détecte automatiquement le schéma des fichiers présents dans le bucket *processed* et alimente le **Glue Data Catalog**.
    - **Glue Job** (PySpark) : lit les données cataloguées, applique les transformations ETL (agrégations, jointures, enrichissements) et écrit le résultat dans le bucket *final*.
 
-4. **Amazon QuickSight** (optionnel)
-   - Se connecte aux données finales (via Glue Catalog ou directement S3) pour créer des tableaux de bord interactifs et visualiser les indicateurs météo.
-
 ## Objectifs pédagogiques
 
 - Mettre en pratique les 5V du Big Data (Volume, Vélocité, Variété, Véracité, Valeur) sur un cas **weather data**.
@@ -45,3 +42,4 @@ cd teraform
 terraform init
 terraform plan
 terraform apply
+
