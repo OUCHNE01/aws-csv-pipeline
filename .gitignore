@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.crash
+
+# Python / env
+__pycache__/
+.venv/
+env/
+*.pyc
+
+# Données
+*.csv
+*.gz
+*.zip
